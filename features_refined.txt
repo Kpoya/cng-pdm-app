@@ -1,0 +1,1 @@
+['Location', 'Vehicle Type', 'Engine Type', 'CNG Month', 'Conversion Type', 'Used?', 'Mods', 'Maint Freq (km)', 'Maint By', 'Symptom Freq', 'Cause Known', 'Daily Km', 'Terrain', 'Traffic', 'Idling', 'Recommend', 'has_knock', 'has_overheat', 'has_shutdown', 'Maint Freq Num']
