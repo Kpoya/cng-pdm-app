@@ -78,5 +78,16 @@ if st.button("Predict Risk"):
             st.error("🚨 High Risk: Schedule general valve/spark check in <1000km (CNG wear).")
     else:
         st.success("✅ Low Risk: Monitor weekly.")
+# PWA Setup (add to end of file)
+st.markdown("""
+<link rel="manifest" href="data:application/json;base64,eyJuYW1lIjoiQ05HIFBETSBBcHAiLCJzaG9ydF9uYW1lIjoiQ05HUERNIiwiZGlzcGxheSI6InN0YW5kYWxvbmUiLCJzdGFydF91cmwiOiIiLCJpY29ucyI6W3sic3JjIjoiaHR0cHM6Ly9jZG4uamNmcy5jbG91ZGRmb2xkLmNvbS9hamF4L2xpYnMvZmF2aWNvbi5pY28vZW1vamkvMTYweDE2MC5wbmciLCJzaXplcyI6IjE2MHgxNjAifV19" />
+<meta name="theme-color" content="#FF6B6B" />
+<link rel="apple-touch-icon" href="https://cdn.jcfsc.cloudfront.com/ajax/libs/favicon.ico/emoji/180x180.png" />
+<script>
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js');
+}
+</script>
+""", unsafe_allow_html=True)
 
 st.caption("Prototype for low-resource CNG fleets – Open-source via Streamlit.")
